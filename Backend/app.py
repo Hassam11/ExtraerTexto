@@ -20,32 +20,6 @@ def handle_link():
     print(data)
     return jsonify(data)
 
-
-# @app.route('/api/result', methods=['GET'])
-# def show_result():
-#     link = request.json.get('link')
-
-#     # response = {'message': 'Enlace recibido con éxito :' + link}
-#     data = Analizar(link)
-#     print(data["Contenido"])
-#     print(data["Confianza"])
-#     # print("El codigo es ", link)
-
-#     json_data = {
-#         "Contenido": data["Contenido"],
-#         "Confianza": data["Confianza"]
-#     }
-
-#     # Crear la respuesta en formato JSON
-#     response = jsonify({'result': ' Lusti', 'name' : data})
-
-#     # Establecer el tipo de contenido y la codificación de caracteres en la respuesta
-
-#     # Retornar la respuesta
-#     return response
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
 
